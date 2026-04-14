@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Blocked Accounts Stats</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      #account-block-list {
+        margin-top: 20px;
+      }
+      ul {
+        margin: 0 0 0 20px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="source-account" style="font-size: 1.1em; margin-bottom: 4px"></div>
+    <div
+      id="total-blocked"
+      style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px"
+    ></div>
+    <div style="margin-bottom: 16px">
+      <label>
+        <input type="checkbox" id="auto-add-source-checkbox" />
+        Automatically add blocked accounts as source accounts
+      </label>
+    </div>
+    <div style="margin-bottom: 16px">
+      <label>
+        <input type="checkbox" id="block-replies-checkbox" />
+        Block and add accounts that reply to posts
+      </label>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+      "
+    >
+      <div style="flex: 1; min-width: 320px">
+        <h2>Blocked Followers Per Account</h2>
+        <div id="account-block-list"><em>Loading...</em></div>
+      </div>
+      <div style="flex: 1; min-width: 320px">
+        <h2>Completed Accounts</h2>
+        <div id="completed-account-list"><em>None yet.</em></div>
+        <h2 style="margin-top: 32px">Categories</h2>
+        <div id="category-list"></div>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

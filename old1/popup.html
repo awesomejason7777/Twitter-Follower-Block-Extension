@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Follower Blocker</title>
+  <style>
+    body { font-family: sans-serif; min-width: 220px; padding: 10px; }
+    button { display: block; width: 100%; margin: 5px 0; padding: 8px; font-size: 14px; cursor: pointer; }
+    #status, #counter { margin-top: 10px; font-size: 13px; color: #333; }
+  </style>
+</head>
+<body>
+  <button id="startBtn">Start Blocking Followers</button>
+  <button id="stopBtn">Stop</button>
+  <button id="emergencyStopBtn">EMERGENCY STOP</button>
+  <div id="status">Status: idle</div>
+  <div id="counter">Total blocked: 0</div>
+  <script src="popup.js"></script>
+</body>
+</html>

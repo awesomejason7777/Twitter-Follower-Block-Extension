@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Follower Blocker",
+  "version": "1.0",
+  "description": "Block users who follow a specific account",
+
+  "permissions": ["scripting", "activeTab", "tabs"],
+
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
