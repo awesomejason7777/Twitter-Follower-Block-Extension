@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Twitter Follower Blocker - Account Tracking",
-  "version": "1.5",
+  "name": "Twitter Follower Blocker - Reply Account Blocking",
+  "version": "1.6",
   "description": "Block users who follow a specific account",
 
   "permissions": ["scripting", "activeTab", "tabs", "storage"],
